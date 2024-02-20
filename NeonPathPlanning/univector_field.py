@@ -153,7 +153,7 @@ class UnivectorField:
         ----------
         ang_guide : float
             Angle of the guide vector
-        args : list of float
+        *args : float
             One or more angles used for the calculation
         wmax : float, optional
             Maximum weight for the sum

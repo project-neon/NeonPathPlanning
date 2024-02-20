@@ -76,7 +76,7 @@ class LimitCycle(object):
 
         Parameters
         ----------
-        args : list of object
+        *args : object
             a variable amount of obstacles to be deleted
         all : bool
             whether to delete all obstacles
