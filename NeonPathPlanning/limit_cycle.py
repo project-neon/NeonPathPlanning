@@ -1,5 +1,5 @@
 import math
-from commons import line_circle_intersection, Point
+from .commons import line_circle_intersection, Point
 
 
 class LimitCycle(object):

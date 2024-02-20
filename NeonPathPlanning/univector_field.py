@@ -1,5 +1,5 @@
 import math
-from commons import Point, angle_between, reduce_angle, norm, dist
+from .commons import Point, angle_between, reduce_angle, norm, dist
 
 
 class UnivectorField:
@@ -89,7 +89,7 @@ class UnivectorField:
 
         Parameters
         ----------
-        args : list of object
+        *args : object
             a variable amount of obstacles to be deleted
         all : bool
             whether to delete all obstacles
