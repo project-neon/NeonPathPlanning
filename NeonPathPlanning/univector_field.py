@@ -144,7 +144,7 @@ class UnivectorField:
 
         return False
 
-    def weighted_sum(self, ang_guide, *args, wmax=2, wmin=1):
+    def __weighted_sum(self, ang_guide, *args, wmax=2, wmin=1):
         """
         Calculate the weighted mean between the angle of any number of vectors
         The weight of each vector is calculated based on the angle of a guide vector
@@ -228,7 +228,7 @@ class UnivectorField:
         # check if the position is close to one of the borders
         on_border = self.__check_border(p)
         if on_border:
-            new_angle = self.weighted_sum(ang_pg, ang_pg, angle_f_p)
+            new_angle = self.__weighted_sum(ang_pg, ang_pg, angle_f_p)
             return reduce_angle(new_angle)
 
         for pos, margin in self.obstacles.values():
@@ -244,9 +244,9 @@ class UnivectorField:
                 if abs(angle_between(pos, p) - angle_f_p) > math.pi:
                     margin_ang = reduce_angle(margin_ang + math.pi)
                 if ang_bo1:
-                    return reduce_angle(self.weighted_sum(margin_ang, margin_ang, ang_pg, wmax=3))
+                    return reduce_angle(self.__weighted_sum(margin_ang, margin_ang, ang_pg, wmax=3))
                 if ang_bo2:
-                    return reduce_angle(self.weighted_sum(margin_ang, ang_pg, margin_ang, wmax=3))
+                    return reduce_angle(self.__weighted_sum(margin_ang, ang_pg, margin_ang, wmax=3))
                 return margin_ang
 
             # check if the line pg is secant to the obstacle
