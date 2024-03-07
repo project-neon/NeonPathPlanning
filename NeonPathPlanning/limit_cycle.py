@@ -2,14 +2,14 @@ import math
 from .commons import line_circle_intersection, Point
 
 
-class LimitCycle(object):
+class LimitCycle:
     def __init__(self, fitness=15):
         """
         Constructor of the Limit Cycle class
 
         Parameters
         ----------
-        fitness : int, optional
+        fitness : float, optional
             Parameter to increase/decrease the 'fitness' of the trajectory
         """
         self.target = None
