@@ -1,5 +1,5 @@
 # NeonPathPlanning
-Simplify autonomous navigation wit different path planning algorithms
+Simplify autonomous navigation with different path planning algorithms
 
 
 ## Requirements
@@ -9,7 +9,7 @@ Simplify autonomous navigation wit different path planning algorithms
 ## Installation
 Use the code below to install the package from PyPI:
 
-`pip install pySSLVision`
+`pip install NeonPathPlanning`
 
 
 ## Overview
@@ -23,11 +23,11 @@ Current implemented:
 ## Colaboration Guide
 In order to colaborate with this repository, clone this repository:
 
-`git clone https://github.com/project-neon/pySSLVision`
+`git clone https://github.com/project-neon/NeonPathPlanning`
 
 Open directory
 
-`cd pySSLVision`
+`cd NeonPathPlanning`
 
 Then install dependencies
 
